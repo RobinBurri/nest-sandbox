@@ -6,5 +6,5 @@ services:
         ports:
             - '8080:3000'
         volumes:
-            - ./backend/nest:/app/src:delegated
+            - ./:/app:delegated
             - /app/node_modules
