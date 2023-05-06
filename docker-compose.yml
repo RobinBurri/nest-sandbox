@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+    nest:
+        build:
+            context: .
+        ports:
+            - '8080:3000'
+        volumes:
+            - ./backend/nest:/app/src:delegated
+            - /app/node_modules
